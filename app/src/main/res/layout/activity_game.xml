@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tapan.memorytest.Game">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:width="150dp"
+                    android:height="150dp"
+                    android:background="@drawable/green" />
+
+                <Button
+                    android:id="@+id/red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:width="150dp"
+                    android:height="150dp"
+                    android:background="@drawable/red" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:width="150dp"
+                    android:height="150dp"
+                    android:background="@drawable/blue" />
+
+                <Button
+                    android:id="@+id/yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:width="150dp"
+                    android:height="150dp"
+                    android:background="@drawable/yellow" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_marginBottom="33dp"
+        android:layout_marginStart="12dp"
+        android:text="Round: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/round"
+        android:layout_alignBottom="@+id/round"
+        android:layout_alignEnd="@+id/relativeLayout"
+        android:layout_marginEnd="14dp"
+        android:text="Score: 0"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <Button
+            android:id="@+id/ans1"
+            android:layout_width="2dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="44dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="" />
+
+        <Button
+            android:id="@+id/ans2"
+            android:layout_width="2dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="" />
+
+        <Button
+            android:id="@+id/ans3"
+            android:layout_width="2dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="" />
+
+        <Button
+            android:id="@+id/ans4"
+            android:layout_width="2dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="" />
+
+        <Button
+            android:id="@+id/ans5"
+            android:layout_width="2dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="" />
+
+        <Button
+            android:id="@+id/ans6"
+            android:layout_width="2dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="" />
+
+    </LinearLayout>
+
+</RelativeLayout>
